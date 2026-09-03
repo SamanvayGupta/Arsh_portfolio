@@ -74,8 +74,21 @@ export const Resume: React.FC = () => {
             ))}
           </div>
         </div>
-
-        
+        <div className="flex flex-col items-center z-10 relative">
+          <p className="text-white mb-6 text-center max-w-2xl">
+            Want to know more about my background and skills? 
+            Download my full resume to see my complete experience, education, and skill set.
+          </p>
+          <a 
+            href="documents/arsh(CV).pdf" 
+            download 
+            className="btn btn-primary flex items-center space-x-2"
+          >
+            <Download size={18} />
+            <span>Download Full Resume</span>
+          </a>
+          <p className="text-sm text-white mt-4">PDF format, 100kb</p>
+        </div>
       </div>
     </section>
   );
